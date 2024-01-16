@@ -1,0 +1,123 @@
+*{
+    font-family: 'Amita', serif;
+font-family: 'Nerko One', cursive;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+li{
+    list-style: none;
+}
+.first{
+    background-image: url('../images/wraper.png');
+    background-position: center center;
+    background-size: cover;
+    height: 300px;
+    font-size: 1.5rem;
+}
+nav{
+    background-color: #3A497B;
+    width: 85%;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0; 
+    border-radius: 30px;
+    ;
+}
+nav .nav-link{
+    color: aliceblue;
+    font-size: 1.5rem;
+}
+nav .nav-link:hover{
+    color: #09c !important;
+}
+.bluecolor{
+    background-color: #3A497B;
+}
+header{
+    width: 100%;height: 200px;
+    background-image: url('../images/wraper.png');
+    background-position: center center;
+    background-size: cover;
+}
+.main{
+    width: 90%;
+}
+.card:hover{
+transform: scale(1.1);
+}
+.card{
+    transition: 1s all;
+}
+.overlay{
+width: 100%;
+height: 100%;
+background-color: rgba(128, 128, 128, 0.596);
+position: absolute;
+top: 0;left: 0;
+transition: 1s all;
+padding: 30px;
+}
+
+.card:hover .overlay{
+    opacity: 0;
+}
+.active{
+    color: #09c !important;
+    cursor: pointer;
+}
+.spinner{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;left: 0;right: 0;bottom: 0;
+    z-index: 9999999999999999;
+    background-color: rgba(0, 0, 0, 0.562);
+}
+
+    .loader {
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        position: relative;
+        animation: rotate 1s linear infinite
+      }
+      .loader::before , .loader::after {
+        content: "";
+        box-sizing: border-box;
+        position: absolute;
+        inset: 0px;
+        border-radius: 50%;
+        border: 5px solid #FFF;
+        animation: prixClipFix 2s linear infinite ;
+      }
+      .loader::after{
+        inset: 8px;
+        transform: rotate3d(90, 90, 0, 180deg );
+        border-color: #FF3D00;
+      }
+
+      @keyframes rotate {
+        0%   {transform: rotate(0deg)}
+        100%   {transform: rotate(360deg)}
+      }
+
+      @keyframes prixClipFix {
+          0%   {clip-path:polygon(50% 50%,0 0,0 0,0 0,0 0,0 0)}
+          50%  {clip-path:polygon(50% 50%,0 0,100% 0,100% 0,100% 0,100% 0)}
+          75%, 100%  {clip-path:polygon(50% 50%,0 0,100% 0,100% 100%,100% 100%,100% 100%)}
+      }
+.nav-link{
+    cursor: pointer;
+}
+#btn:hover{
+background-color: yellow;
+color: black !important;
+}
+.card{
+    cursor: pointer;
+}
+#close{
+    cursor: pointer;
+}
